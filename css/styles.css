@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 60pt;
+}
+
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header li a,
+footer li a {
+  font-family: "Baloo Bhai 2";
+  line-height: .75;
+}
+
+p,
+span, input {
+  font-family: "Montserrat";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header li {
+  padding: 7px 15px;
+  transition: background-color 0.3s;
+}
+header li:hover {
+  background-color: rgba(108, 152, 148, 0.23);
+}
+header li a {
+  color: #444444;
+  font-weight: bold;
+}
+
+main {
+  animation: opacity 2.5s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+#choose-class img {
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+#our-stats {
+  background-image: url("../img/bg-our-stats.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#best-instructor {
+  height: 980px;
+}
+#best-instructor div {
+  height: 100%;
+}
+#best-instructor #bg-img-best-instructor {
+  background-image: url("../img/bg-img-best-instructor.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#our-stats .stat {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  border: 2px solid #6c9894;
+}
+
+#pricing .price {
+  max-width: 380px;
+}
+
+#dont-miss-our-update #input-wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+#dont-miss-our-update #input-wrapper input {
+  width: 75%;
+  padding: 15px 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: none;
+  outline: none;
+  color: #6c9894;
+}
+#dont-miss-our-update #input-wrapper input::placeholder {
+  color: #6c9894;
+}
+#dont-miss-our-update #input-wrapper button {
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  cursor: pointer;
+  padding-right: 20px;
+  font-size: 12pt;
+}
+
+footer ul li {
+  margin: 15px 0;
+}
+
+footer li a {
+  color: #6c9894;
+}
+
+header li a span,
+footer li a span {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 800px;
+  }
+
+  main img {
+    margin-bottom: 20px;
+  }
+  main > div {
+    justify-content: center;
+  }
+
+  main div div {
+    width: 100%;
+    flex: auto !important;
+  }
+
+  .justify-between {
+    justify-content: space-around !important;
+  }
+
+  .justify-between div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #best-instructor {
+    height: auto;
+    padding: 7rem 0;
+    background-color: #6c9894;
+    text-align: center;
+  }
+  #best-instructor div > div {
+    align-items: center !important;
+  }
+  #best-instructor div div:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  footer .flex div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+  }
+  #best-instructor div > div {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 40pt;
+  }
+
+  main img,
+  #choose-class img {
+    width: 100% !important;
+  }
+
+  nav > div.flex ul {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  nav ul li:last-child a {
+    justify-content: center;
+  }
+
+  footer .flex div {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer li a {
+    width: 150px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  footer li a span {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #our-stats .stat {
+    width: 250px;
+    height: 250px;
+  }
+}
