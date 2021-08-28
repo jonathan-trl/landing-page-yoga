@@ -124,7 +124,6 @@ main {
   border-bottom-right-radius: 50px;
   cursor: pointer;
   padding-right: 20px;
-  font-size: 12pt;
 }
 
 footer ul li {
@@ -198,7 +197,7 @@ footer li a span {
   }
 
   h1 {
-    font-size: 40pt;
+    font-size: 25pt;
   }
 
   main img,
